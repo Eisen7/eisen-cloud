@@ -1,0 +1,6 @@
+rootProject.name = 'eisen-cloud'
+include 'eureka-server'
+include 'eureka-client'
+include 'consol-client'
+include 'console-consumer1'
+
