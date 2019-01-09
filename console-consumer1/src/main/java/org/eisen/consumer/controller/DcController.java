@@ -1,5 +1,7 @@
 package org.eisen.consumer.controller;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import org.eisen.consumer.feign.DcFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -21,6 +23,15 @@ public class DcController {
         String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/dc";
         System.out.println(url);
         return restTemplate.getForObject(url, String.class);
+    }
+
+
+    @Autowired
+    DcFeign dcFeign;
+
+    @GetMapping("/feign")
+    public String dcFeign() {
+       return dcFeign.consumer();
     }
 
 }
