@@ -9,4 +9,8 @@ public interface DcFeign {
     @GetMapping("/dc")
     String consumer();
 
+    @GetMapping("/hystrixCommandFallbackMethod")
+    String hystrixCommandFallbackMethod();
+
+
 }

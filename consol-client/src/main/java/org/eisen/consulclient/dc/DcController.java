@@ -18,4 +18,10 @@ public class DcController {
         return services;
     }
 
+    @GetMapping("/hystrixCommandFallbackMethod")
+    public String hystrixCommandFallbackMethod() throws InterruptedException {
+        Thread.sleep(5000);
+        return "SUCCESS";
+    }
+
 }

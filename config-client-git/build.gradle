@@ -25,6 +25,7 @@ repositories {
     mavenLocal()
     maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
     maven { url "https://repo.spring.io/milestone" }
+    mavenCentral()
 }
 
 ext {
@@ -32,13 +33,13 @@ ext {
 }
 
 dependencies {
-    implementation('org.springframework.cloud:spring-cloud-starter-consul-discovery')
-//    implementation('org.springframework.cloud:spring-cloud-starter-consul-config')
-    implementation('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
-    implementation('org.springframework.cloud:spring-cloud-starter-consul')
-    implementation('org.springframework.cloud:spring-cloud-starter-openfeign')
-
+//    implementation('org.springframework.cloud:spring-cloud-starter-consul')
+//    implementation('org.springframework.cloud:spring-cloud-starter-openfeign')
     implementation('org.springframework.boot:spring-boot-starter-web:2.1.1.RELEASE')
+    implementation('org.springframework.cloud:spring-cloud-starter-config')
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+
+
 }
 
 dependencyManagement {

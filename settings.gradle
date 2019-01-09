@@ -3,4 +3,6 @@ include 'eureka-server'
 include 'eureka-client'
 include 'consol-client'
 include 'console-consumer1'
+include 'config-server-git'
+include 'config-client-git'
 
