@@ -33,6 +33,9 @@ ext {
 
 dependencies {
     implementation('org.springframework.cloud:spring-cloud-starter-consul-discovery')
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+
     implementation('org.springframework.boot:spring-boot-starter-web:2.1.1.RELEASE')
 }
 

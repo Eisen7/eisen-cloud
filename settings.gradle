@@ -5,4 +5,7 @@ include 'consol-client'
 include 'console-consumer1'
 include 'config-server-git'
 include 'config-client-git'
+include 'hystrix-dashboard'
+include 'api-gateway'
+include 'boot-swagger2'
 
