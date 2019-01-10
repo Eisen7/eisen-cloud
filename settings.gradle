@@ -8,4 +8,5 @@ include 'config-client-git'
 include 'hystrix-dashboard'
 include 'api-gateway'
 include 'boot-swagger2'
+include 'rabbitmq-hello'
 
