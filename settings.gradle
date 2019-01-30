@@ -10,4 +10,6 @@ include 'api-gateway'
 include 'boot-swagger2'
 include 'rabbitmq-hello'
 include 'stream-hello'
+include 'zookeeper-server'
+include 'zookeeper-client'
 
